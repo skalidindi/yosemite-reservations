@@ -1,5 +1,5 @@
 # Yosemite Campsite Availability
-This is a simple script to log list of campsite availabilities to a csv
+This is a simple script to notify when a yosemite campsite is available to book. Support logging list of campsite availabilities to a csv, and email/SMS notifications.
 
 # Instructions
 Install requirements:
