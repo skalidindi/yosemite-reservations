@@ -16,9 +16,9 @@ Use on AWS Lambda:
 
 1. pip install all requirements locally inside this folder. Click [here](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html) for more details.
 2. package up the folder as a zip file
-3. Setup a new lambda function on aws and upload your python zip.
+3. Setup a new lambda function on aws and upload your new zip file.
 4. Fill out appropriate os environment variables such as email username/password.
-5. Setup CloudWatch Events to create a cron job to your lambda function every X minutes
+5. Setup CloudWatch Events to create a cron job to run your lambda function every X minutes
 
 
 ## Initial Inspiration
