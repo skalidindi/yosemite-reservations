@@ -1,14 +1,14 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   date-fns: ^2.28.0
-  got: ^12.0.2
-  twilio: ^3.75.1
+  got: ^12.1.0
+  twilio: ^3.78.0
 
 dependencies:
   date-fns: 2.28.0
-  got: 12.0.2
-  twilio: 3.75.1
+  got: 12.1.0
+  twilio: 3.78.0
 
 packages:
 
@@ -63,11 +63,11 @@ packages:
     dev: false
 
   /asap/2.0.6:
-    resolution: {integrity: sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=}
+    resolution: {integrity: sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==}
     dev: false
 
-  /axios/0.25.0:
-    resolution: {integrity: sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g==}
+  /axios/0.26.1:
+    resolution: {integrity: sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==}
     dependencies:
       follow-redirects: 1.14.9
     transitivePeerDependencies:
@@ -104,7 +104,7 @@ packages:
     dev: false
 
   /clone-response/1.0.2:
-    resolution: {integrity: sha1-0dyXOSAxTfZ/vrlCI7TuNQI56Ws=}
+    resolution: {integrity: sha512-yjLXh88P599UOyPTFX0POsd7WxnbsVsGohcwzHOLspIhhpalPw1BcqED8NblyZLKcGrL8dTgMlcaZxV2jAD41Q==}
     dependencies:
       mimic-response: 1.0.1
     dev: false
@@ -192,8 +192,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /got/12.0.2:
-    resolution: {integrity: sha512-Zi4yHiqCgaorUbknr/RHFBsC3XqjSodaw0F3qxlqAqyj+OGYZl37/uy01R0qz++KANKQYdY5FHJ0okXZpEzwWQ==}
+  /got/12.1.0:
+    resolution: {integrity: sha512-hBv2ty9QN2RdbJJMK3hesmSkFTjVIHyIDDbssCKnSmq62edGgImJWD10Eb1k77TiV1bxloxqcFAVK8+9pkhOig==}
     engines: {node: '>=14.16'}
     dependencies:
       '@sindresorhus/is': 4.6.0
@@ -287,31 +287,31 @@ packages:
     dev: false
 
   /lodash.includes/4.3.0:
-    resolution: {integrity: sha1-YLuYqHy5I8aMoeUTJUgzFISfVT8=}
+    resolution: {integrity: sha512-W3Bx6mdkRTGtlJISOvVD/lbqjTlPPUDTMnlXZFnVwi9NKJ6tiAk6LVdlhZMm17VZisqhKcgzpO5Wz91PCt5b0w==}
     dev: false
 
   /lodash.isboolean/3.0.3:
-    resolution: {integrity: sha1-bC4XHbKiV82WgC/UOwGyDV9YcPY=}
+    resolution: {integrity: sha512-Bz5mupy2SVbPHURB98VAcw+aHh4vRV5IPNhILUCsOzRmsTmSQ17jIuqopAentWoehktxGd9e/hbIXq980/1QJg==}
     dev: false
 
   /lodash.isinteger/4.0.4:
-    resolution: {integrity: sha1-YZwK89A/iwTDH1iChAt3sRzWg0M=}
+    resolution: {integrity: sha512-DBwtEWN2caHQ9/imiNeEA5ys1JoRtRfY3d7V9wkqtbycnAmTvRRmbHKDV4a0EYc678/dia0jrte4tjYwVBaZUA==}
     dev: false
 
   /lodash.isnumber/3.0.3:
-    resolution: {integrity: sha1-POdoEMWSjQM1IwGsKHMX8RwLH/w=}
+    resolution: {integrity: sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw==}
     dev: false
 
   /lodash.isplainobject/4.0.6:
-    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=}
+    resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
     dev: false
 
   /lodash.isstring/4.0.1:
-    resolution: {integrity: sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=}
+    resolution: {integrity: sha512-0wJxfxH1wgO3GrbuP+dTTk7op+6L41QCXbGINEmD+ny/G/eCqGzxyCsh7159S+mgDDcoarnBw6PC1PS5+wUGgw==}
     dev: false
 
   /lodash.once/4.1.1:
-    resolution: {integrity: sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=}
+    resolution: {integrity: sha512-Sb487aTOCr9drQVL8pIxOzVhafOjZN9UU54hiN8PU3uAiSV7lx1yYNpbNmex2PK6dSJoNTSJUUswT651yww3Mg==}
     dev: false
 
   /lodash/4.17.21:
@@ -356,7 +356,7 @@ packages:
     dev: false
 
   /once/1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
+    resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
       wrappy: 1.0.2
     dev: false
@@ -367,7 +367,7 @@ packages:
     dev: false
 
   /pop-iterate/1.0.1:
-    resolution: {integrity: sha1-zqz9q0q/NT16DyqqLB/Hs/lBO6M=}
+    resolution: {integrity: sha512-HRCx4+KJE30JhX84wBN4+vja9bNfysxg1y28l0DuJmkoaICiv2ZSilKddbS48pq50P8d2erAhqDLbp47yv3MbQ==}
     dev: false
 
   /pump/3.0.0:
@@ -378,7 +378,7 @@ packages:
     dev: false
 
   /q/2.0.3:
-    resolution: {integrity: sha1-dbjbAlWhpa+C9Yw/Oqoe/sfQ0TQ=}
+    resolution: {integrity: sha512-gv6vLGcmAOg96/fgo3d9tvA4dJNZL3fMyBqVRrGxQ+Q/o4k9QzbJ3NQF9cOO/71wRodoXhaPgphvMFU68qVAJQ==}
     dependencies:
       asap: 2.0.6
       pop-iterate: 1.0.1
@@ -402,7 +402,7 @@ packages:
     dev: false
 
   /requires-port/1.0.0:
-    resolution: {integrity: sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=}
+    resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
     dev: false
 
   /resolve-alpn/1.2.1:
@@ -416,7 +416,7 @@ packages:
     dev: false
 
   /rootpath/0.1.2:
-    resolution: {integrity: sha1-Wzeah9ypBum5HWkKWZQ5vvJn6ms=}
+    resolution: {integrity: sha512-R3wLbuAYejpxQjL/SjXo1Cjv4wcJECnMRT/FlcCfTwCBhaji9rWaRCoVEQ1SPiTJ4kKK+yh+bZLAV7SCafoDDw==}
     dev: false
 
   /safe-buffer/5.2.1:
@@ -440,11 +440,11 @@ packages:
       object-inspect: 1.12.0
     dev: false
 
-  /twilio/3.75.1:
-    resolution: {integrity: sha512-q9h8AzJekL2etE4hPiZ3IOz9V6MkrY5d5cLvTra+Xe+jtDjQgarKbMUOYFhVHb/zXycf9qqW+Qk9de0ekgLwrQ==}
+  /twilio/3.78.0:
+    resolution: {integrity: sha512-XowaxcOeLVNnvxx3t81seLZ/hE/N4z6yt9Vg+KtGhj81gf2ghUa57cr5QtqsI06qnknsGcId5I9X4mRoxZ4nMg==}
     engines: {node: '>=6.0'}
     dependencies:
-      axios: 0.25.0
+      axios: 0.26.1
       dayjs: 1.11.0
       https-proxy-agent: 5.0.0
       jsonwebtoken: 8.5.1
@@ -472,7 +472,7 @@ packages:
     dev: false
 
   /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: false
 
   /xmlbuilder/13.0.2:

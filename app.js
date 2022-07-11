@@ -38,7 +38,7 @@ async function getAvailableCampsties(startDate, endDate, daysToInclude) {
     232449: "NORTH PINES",
   };
   const startOfMonthDate = format(
-    startOfMonth(new Date(startDate)),
+    startOfMonth(new Date(startDate.split("-"))),
     "yyyy-MM-dd"
   );
   const parkIds = Object.keys(PARKS);
@@ -63,7 +63,7 @@ async function getAvailableCampsties(startDate, endDate, daysToInclude) {
   return availableCampsites;
 }
 
-function getAxiosInstance(prefixUrl) {
+function getGotInstance(prefixUrl) {
   return got.extend({
     prefixUrl,
     headers: {
@@ -76,7 +76,7 @@ function getAxiosInstance(prefixUrl) {
 
 function getCampgroundAvailabilities(parkId, startDate) {
   const START_TIME = "T00%3A00%3A00.000Z";
-  const instance = getAxiosInstance(BASE_URL);
+  const instance = getGotInstance(BASE_URL);
   return instance
     .get(
       `api/camps/availability/campground/${parkId}/month?start_date=${startDate}${START_TIME}`
