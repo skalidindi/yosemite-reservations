@@ -1,6 +1,6 @@
 import got from "got";
 import twilio from "twilio";
-import { format, startOfMonth } from "date-fns";
+import { format, startOfMonth, getDay, isWithinInterval } from "date-fns";
 
 const BASE_URL = "https://www.recreation.gov";
 const {
@@ -24,7 +24,7 @@ export const handler = async () => {
     for (const campsite of availableCampsites) {
       messageBody += `\n${campsite.park}, Booking URL: ${campsite.url}, available on ${campsite.date}.\n`;
     }
-    await sendTwilio(messageBody);
+    await sendTwilioMessage(messageBody);
   } else {
     console.log("No campsites available.");
   }
@@ -43,7 +43,7 @@ async function getAvailableCampsties(startDate, endDate, daysToInclude) {
   );
   const parkIds = Object.keys(PARKS);
   for (const parkId of parkIds) {
-    const campsites = await getCampgroundAvailabilities(
+    const { campsites } = await getCampgroundAvailabilities(
       parkId,
       startOfMonthDate
     );
