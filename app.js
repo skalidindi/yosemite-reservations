@@ -7,6 +7,7 @@ const {
   START_DATE,
   END_DATE,
   DAYS_TO_INCLUDE,
+  DISCORD_WEBHOOK_URL,
   TWILIO_ACCOUNT_SID,
   TWILIO_AUTH_TOKEN,
   TWILIO_FROM_NUMBER,
@@ -24,7 +25,7 @@ export const handler = async () => {
     for (const campsite of availableCampsites) {
       messageBody += `\n${campsite.park}, Booking URL: ${campsite.url}, available on ${campsite.date}.\n`;
     }
-    await sendTwilioMessage(messageBody);
+    await sendDiscordMessage(messageBody);
   } else {
     console.log("No campsites available.");
   }
@@ -127,4 +128,14 @@ export async function sendTwilioMessage(body) {
     to: TWILIO_TO_NUMBER,
     from: TWILIO_FROM_NUMBER,
   });
+}
+
+export async function sendDiscordMessage(message) {
+  return got
+    .post(webhook, {
+      json: {
+        content: message,
+      },
+    })
+    .json();
 }
