@@ -132,7 +132,7 @@ export async function sendTwilioMessage(body) {
 
 export async function sendDiscordMessage(message) {
   return got
-    .post(webhook, {
+    .post(DISCORD_WEBHOOK_URL, {
       json: {
         content: message,
       },
