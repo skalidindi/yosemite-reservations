@@ -1,5 +1,4 @@
 import got from "got";
-import twilio from "twilio";
 import { format, startOfMonth, getDay, isWithinInterval } from "date-fns";
 
 const BASE_URL = "https://www.recreation.gov";
@@ -8,10 +7,6 @@ const {
   END_DATE,
   DAYS_TO_INCLUDE,
   DISCORD_WEBHOOK_URL,
-  TWILIO_ACCOUNT_SID,
-  TWILIO_AUTH_TOKEN,
-  TWILIO_FROM_NUMBER,
-  TWILIO_TO_NUMBER,
 } = process.env;
 
 export const handler = async () => {
@@ -118,16 +113,6 @@ function getAvailabilitiesForCampsite(
     }
   }
   return matchingAvailabilities;
-}
-
-export async function sendTwilioMessage(body) {
-  const client = new twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
-
-  return client.messages.create({
-    body,
-    to: TWILIO_TO_NUMBER,
-    from: TWILIO_FROM_NUMBER,
-  });
 }
 
 export async function sendDiscordMessage(message) {
