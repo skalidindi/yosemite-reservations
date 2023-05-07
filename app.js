@@ -16,11 +16,7 @@ export const handler = async () => {
     DAYS_TO_INCLUDE.split(",").map((num) => parseInt(num, 10))
   );
   if (Array.isArray(availableCampsites) && availableCampsites.length) {
-    let messageBody = "";
-    for (const campsite of availableCampsites) {
-      messageBody += `\n${campsite.park}, Booking URL: ${campsite.url}, available on ${campsite.date}.\n`;
-    }
-    await sendDiscordMessage(messageBody);
+    sendDiscordMessage(availableCampsites);
   } else {
     console.log("No campsites available.");
   }
@@ -115,12 +111,15 @@ function getAvailabilitiesForCampsite(
   return matchingAvailabilities;
 }
 
-export async function sendDiscordMessage(message) {
-  return got
-    .post(DISCORD_WEBHOOK_URL, {
-      json: {
-        content: message,
-      },
-    })
-    .json();
+export function sendDiscordMessage(availableCampsites) {
+  const limitMessageCount = 10;
+  for (const campsite of availableCampsites.slice(0, limitMessageCount)) {
+    const message = `${campsite.park}, Booking URL: ${campsite.url}, available on ${campsite.date}.`;
+    got.post(DISCORD_WEBHOOK_URL, {
+        json: {
+          content: message,
+        },
+      })
+      .json();
+  }
 }
